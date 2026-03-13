@@ -55,7 +55,7 @@ model UserScore {
 }
 
 model QuizAttempt {
-  id        String   @id @default(cuid())
+  id        String   @id @default(uuid())
   quizId    String
   userId    String
   score     Int
